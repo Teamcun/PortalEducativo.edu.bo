@@ -50,34 +50,45 @@ body {
 }
 
 /* Título y subtítulo en el encabezado */
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+  overflow: hidden;
+  text-wrap: balance;
+}
+
 .navbar-brand .brand-text {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #F2CB05; /* Color dorado */
+  color: #F2CB05;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   letter-spacing: 2px;
   transition: color 0.3s ease;
+  word-break: break-word;
 }
 
 .navbar-brand .sub-title {
   font-size: 1rem;
-  color: #F27405; /* Color naranja */
+  color: #F27405;
   text-transform: uppercase;
   font-weight: lighter;
-  display: block; /* Lo pone en una línea debajo */
+  display: block;
   margin-top: 5px;
+  word-break: break-word;
 }
 
 .navbar-brand .brand-text:hover {
-  color: #0455BF; /* Cambio de color al pasar el mouse */
+  color: #0455BF;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* Media queries para hacerlo responsivo */
-@media (max-width: 748px) {
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
   .navbar-brand .brand-text {
     font-size: 1.4rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
   }
 
   .navbar-brand .sub-title {
@@ -85,15 +96,18 @@ body {
   }
 }
 
-@media (max-width: 566px) {
+@media (max-width: 576px) {
+  .navbar-brand {
+    align-items: center;
+    text-align: center;
+  }
+
   .navbar-brand .brand-text {
     font-size: 1.2rem;
-    letter-spacing: 1px;
   }
 
   .navbar-brand .sub-title {
     font-size: 0.8rem;
-    margin-top: 3px;
   }
 }
 

@@ -1,0 +1,194 @@
+/* Importar Animate.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* Estilos adicionales si lo deseas */
+.animate__fadeIn {
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+}
+/* Colores generales */ 
+:root {
+  --primary-color: #F20C1F;
+  --secondary-color: #0455BF;
+  --accent-color: #038C17;
+  --highlight-color: #F2CB05;
+  --warning-color: #F27405;
+  --color-plmo: #87794E;
+}
+
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: grey; 
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--highlight-color);
+}
+
+/* Logo en el encabezado */
+.header-logo {
+  height: 60px; /* Ajusta la altura del logo */
+  width: auto;
+  object-fit: contain;
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+/* Título y subtítulo en el encabezado */
+.navbar-brand .brand-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #F2CB05; /* Color dorado */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand .sub-title {
+  font-size: 1rem;
+  color: #F27405; /* Color naranja */
+  text-transform: uppercase;
+  font-weight: lighter;
+  display: block; /* Lo pone en una línea debajo */
+  margin-top: 5px;
+}
+
+.navbar-brand .brand-text:hover {
+  color: #0455BF; /* Cambio de color al pasar el mouse */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+/* Botón con borde */
+.btn-outline-primary {
+  border: 2px solid #330369;
+  background-color: #51608C;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* Hover con fondo rojo y texto blanco */
+.btn-outline-primary:hover {
+  background-color: #ffffff;
+  color: #51608C;
+}
+
+/* Estilo para el carrusel */
+.carousel-inner img {
+  width: 100%;
+  height: 400px; /* Ajusta esta altura según lo que necesites */
+  object-fit: cover;
+}
+
+/* Fondo de la sección de contacto */
+section.bg-contact {
+  background-color: var(--color-plmo); /* #F2CB05 */
+}
+
+/* Título alineado a la izquierda */
+h2.text-start {
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+h1{
+  text-align: left;
+  font-weight: bold;
+  color: #F2CB05;
+}
+
+/* Estilo de los bloques de información */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contact-item i:hover {
+  color: white;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Mapa más pequeño */
+.ratio-16x9 {
+  max-width: 100%;
+  height: 250px; /* Tamaño reducido */
+}
+
+/* Ajustar texto en contacto */
+section.bg-contact p {
+  color: #fff;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+/*clases*/
+.card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  max-height: 100px;
+  object-fit: contain;
+  padding: 10px;
+  background-color: white;
+}
+
+.card-header {
+  background-color: #51608C;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+}
+
+
+
+
+  

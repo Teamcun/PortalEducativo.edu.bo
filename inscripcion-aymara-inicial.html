@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscripción -Curso Aymara Inicial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link href="styles.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      background-color: #f4f4f4;
+      padding: 2rem;
+    }
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .left-content {
+      flex: 1;
+      min-width: 300px;
+    }
+    .right-content {
+      flex: 1;
+      min-width: 300px;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      color: #510485;
+    }
+    .content-container {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="content-container">
+      <h2 class="mb-4">CURSO EN LENGUA Y CULTURA AYMARA - NIVEL INICIAL</h2>
+      <div class="main-container">
+        <!-- Información general -->
+        <div class="left-content">
+          <p><strong>Objetivo:</strong><br>
+            Brindar a los participantes conocimientos básicos del idioma Aymara, promoviendo la preservación y valoración de las lenguas originarias. Al finalizar el diplomado, el estudiante será capaz de mantener conversaciones simples en Aymara y comprender aspectos esenciales de la cosmovisión y cultura andina.
+          </p>
+
+          <p><strong>Contenido:</strong></p>
+          <ul>
+            <li>Fonética y pronunciación del Aymara</li>
+            <li>Vocabulario básico y saludos</li>
+            <li>Estructuras gramaticales elementales</li>
+            <li>Conversaciones cotidianas</li>
+            <li>Cosmovisión, símbolos y valores del mundo aymara</li>
+            <li>Talleres prácticos de comprensión oral y escrita</li>
+            <li>Proyecto final: diálogo o presentación cultural</li>
+          </ul>
+
+          <p><strong>Dirigido a:</strong><br>
+            Funcionarios públicos, docentes, estudiantes universitarios y público en general interesado en aprender el idioma Aymara desde sus bases y enriquecer su visión intercultural.
+          </p>
+
+          <p><strong>Certifica:</strong><br>
+            Instituto Plurinacional de Estudios de Lenguas y Culturas y Ministerio de Educación
+          </p>
+
+          <p><strong>📘 El diploma se entrega en formato físico y digital.</strong></p>
+          <p><strong>📌 Se requiere mínimo 80% de asistencia y aprobación del proyecto final.</strong></p>
+        </div>
+
+        <!-- Detalles y requisitos -->
+        <div class="right-content">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">DETALLES</h5>
+              <p><strong>Inicio:</strong> 6 de mayo de 2025</p>
+              <p><strong>Horarios:</strong> Martes y Jueves (18:30 - 20:30)</p>
+              <p><strong>Carga Horaria:</strong> 120 horas académicas</p>
+              <p><strong>Modalidad:</strong> Virtual (clases por Zoom + plataforma educativa)</p>
+              <p><strong>Área:</strong> Lenguas y culturas originarias</p>
+              <p><strong>Inscripción hasta:</strong> 4 de mayo de 2025</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">INVERSIÓN</h5>
+              <p><strong>Contado:</strong> Bs 500,00</p>
+              <p><strong>Cuotas:</strong></p>
+              <ul>
+                <li>1er Pago: Bs 300</li>
+                <li>2do Pago: Bs 200</li>
+              </ul>
+              <p>Incluye acceso a plataforma, materiales digitales y diploma físico y digital.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REQUISITOS</h5>
+              <ul>
+                <li>Formulario de inscripción en línea</li>
+                <li>Copia de Cédula de Identidad</li>
+                <li>Comprobante de pago</li>
+                <li>Compromiso de participación firmado</li>
+              </ul>
+              <p>Los documentos pueden enviarse digitalmente al correo oficial o vía plataforma.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">CONTACTO</h5>
+              <p>Unidad de Lenguas Originarias</p>
+              <p><strong>Celular:</strong> 71512345</p>
+              <p><strong>Email:</strong> lenguas@institutopluri.bo</p>
+              <p><strong>Dirección:</strong> Edif. Institucional, Calle Murillo N° 123, La Paz</p>
+            </div>
+          </div>
+
+          <!-- Botón para desplegar formulario -->
+          <div class="d-grid gap-2">
+            <button id="btnMostrarFormulario" class="btn btn-outline-primary">Inscribirme al Curso</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+       <!-- Formulario de Inscripción -->
+        <div id="formularioInscripcion" class="card mt-5" style="display:none;">
+            <div class="card-body">
+            <h5 class="card-title">Formulario de Inscripción</h5>
+            <form id="inscripcionForm">
+                <div class="row">
+                <!-- Columna 1 -->
+                <div class="col-md-4">
+                    <div class="mb-3">
+                    <label for="nroDocumento" class="form-label">Nro. Documento de Identidad *</label>
+                    <input type="text" id="nroDocumento" name="nroDocumento" class="form-control" required>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="expedidoEn" class="form-label">Expedido en *</label>
+                    <select id="expedidoEn" name="expedidoEn" class="form-select" required>
+                        <option value="">Seleccione...</option>
+                        <option value="La Paz">La Paz</option>
+                        <option value="Cochabamba">Cochabamba</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Oruro">Oruro</option>
+                        <option value="Potosí">Potosí</option>
+                        <option value="Chuquisaca">Chuquisaca</option>
+                        <option value="Tarija">Tarija</option>
+                        <option value="Beni">Beni</option>
+                        <option value="Pando">Pando</option>
+                    </select>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="apellidoPaterno" class="form-label">Apellido Paterno *</label>
+                    <input type="text" id="apellidoPaterno" name="apellidoPaterno" class="form-control" required>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="apellidoMaterno" class="form-label">Apellido Materno *</label>
+                    <input type="text" id="apellidoMaterno" name="apellidoMaterno" class="form-control" required>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="nombres" class="form-label">Nombres *</label>
+                    <input type="text" id="nombres" name="nombres" class="form-control" required>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento *</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="form-control" required>
+                    </div>
+                </div>
+        
+                <!-- Columna 2 -->
+                <div class="col-md-4">
+                    <div class="mb-3">
+                    <label for="ciudad" class="form-label">Ciudad donde vive</label>
+                    <select class="form-select" name="ciudad" id="ciudad">
+                        <option value="">Seleccione...</option>
+                        <option value="La Paz">La Paz</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Cochabamba">Cochabamba</option>
+                        <!-- Más ciudades... -->
+                    </select>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección donde vive</label>
+                    <input type="text" id="direccion" name="direccion" class="form-control">
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="lugarNacimiento" class="form-label">Lugar de Nacimiento *</label>
+                    <select class="form-select" name="lugarNacimiento" id="lugarNacimiento">
+                        <option value="">Seleccione...</option>
+                        <option value="La Paz">La Paz</option>
+                        <option value="Cochabamba">Cochabamba</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <!-- Otros... -->
+                    </select>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label class="form-label">Sexo *</label><br>
+                    <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="sexo" value="Femenino" required class="ms-3">
+                    <label for="femenino">Femenino</label>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="email" class="form-label">Email personal *</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="telefonoMovil" class="form-label">Teléfono Móvil *</label>
+                    <input type="text" id="telefonoMovil" name="telefonoMovil" class="form-control" required>
+                    </div>
+                </div>
+        
+                <!-- Columna 3 -->
+                <div class="col-md-4">
+                    <div class="mb-3">
+                    <label for="complementoCarnet" class="form-label">Complemento Carnet</label>
+                    <input type="text" id="complementoCarnet" name="complementoCarnet" class="form-control">
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="telefonoFijo" class="form-label">Teléfono Fijo</label>
+                    <input type="text" id="telefonoFijo" name="telefonoFijo" class="form-control">
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="metodoPago" class="form-label">Método de Pago *</label>
+                    <select class="form-select" name="metodoPago" id="metodoPago" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Contado">Contado</option>
+                        <option value="Cuotas">Cuotas</option>
+                    </select>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="profesion" class="form-label">Profesión</label>
+                    <select class="form-select" name="profesion" id="profesion">
+                        <option value="">Seleccione...</option>
+                        <option value="Abogado">Abogado</option>
+                        <option value="Ingeniero">Ingeniero</option>
+                        <!-- Otros... -->
+                    </select>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="empresa" class="form-label">Empresa/Institución</label>
+                    <select class="form-select" name="empresa" id="empresa">
+                        <option value="">Seleccione...</option>
+                        <option value="Empresa 1">Empresa 1</option>
+                        <option value="Empresa 2">Empresa 2</option>
+                    </select>
+                    </div>
+        
+                    <div class="mb-3">
+                    <label for="cargo" class="form-label">Cargo</label>
+                    <select class="form-select" name="cargo" id="cargo">
+                        <option value="">Seleccione...</option>
+                        <option value="Gerente">Gerente</option>
+                        <option value="Analista">Analista</option>
+                    </select>
+                    </div>
+        
+                    <!-- Google reCAPTCHA -->
+                    <div class="mb-3">
+                    <label class="form-label">Verificación *</label>
+                    <div class="g-recaptcha" data-sitekey="6LctpBcrAAAAAMy-RAQdH6Zx3I3MM_yTZBFp3QXJ"></div>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="mt-4 text-center">
+                <button type="submit" class="btn btn-primary">Enviar Inscripción</button>
+                </div>
+            </form>
+            </div>
+        </div>
+
+  <!-- Script para manejar el botón-->
+  <script type="module" src="formulario-inscripcion.js"></script>
+
+</body>
+</html>
